@@ -3,13 +3,13 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "3.3.2"
+#define MyAppVersion "3.4.0"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
 ;See https://msdn.microsoft.com/en-us/library/ee942965(v=vs.110).aspx#return_codes
-#define InstalledFramework= "4.7.2"
-#define InstalledFrameworkNo= 461808
+#define InstalledFramework= "4.8"
+#define InstalledFrameworkNo= 528372
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
