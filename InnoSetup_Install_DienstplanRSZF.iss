@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "3.6.7"
+#define MyAppVersion "4.0.0"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -43,14 +43,13 @@ Name: "german"; MessagesFile: "compiler:Languages\German.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\bin\Release\DienstplanRSZF.exe"; DestDir: "{app}"; Flags: ignoreversion                                                       
+Source: "..\bin\Release\DienstplanRSZF.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\Release\Google.Apis.Auth.dll"; DestDir: "{app}"
-;Source: "..\bin\Release\Google.Apis.Auth.PlatformServices.dll"; DestDir: "{app}"
-;Source: "..\bin\Release\Google.Apis.PlatformServices.dll"; DestDir: "{app}"
 Source: "..\bin\Release\Google.Apis.Calendar.v3.dll"; DestDir: "{app}"
 Source: "..\bin\Release\Google.Apis.Core.dll"; DestDir: "{app}"
 Source: "..\bin\Release\Google.Apis.dll"; DestDir: "{app}"
 Source: "..\bin\Release\Newtonsoft.Json.dll"; DestDir: "{app}"
+Source: "..\bin\Release\DienstplanRSZF.exe.config"; DestDir: "{app}"
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
