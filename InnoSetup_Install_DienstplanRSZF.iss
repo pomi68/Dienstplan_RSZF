@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "4.0.0"
+#define MyAppVersion "5.0.0"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -22,19 +22,26 @@ AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName=   DienstplanRSZF
-OutputDir=..\publish;OutputBaseFilename=DienstplanRSZF_Install_{#MyAppVersion}
+OutputDir=..\publish
+;OutputBaseFilename=DienstplanRSZF_Install_{#MyAppVersion}
 OutputBaseFilename=DienstplanRSZF_Install
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=none
-RestartIfNeededByRun=FalseCloseApplications=yes
+RestartIfNeededByRun=False
+CloseApplications=yes
 VersionInfoVersion={#MyAppVersion}
 VersionInfoCompany=mwb
 VersionInfoCopyright=mwb
 VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 
-;Include Download Needed Dot Net Framework#include <D:\Program Files (x86)\Inno Download Plugin\idp.iss>
+;Include Download Needed Dot Net Framework
+#include <D:\Program Files (x86)\Inno Download Plugin\idp.iss>
+WizardImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
+WizardSmallImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
+WizardImageAlphaFormat=False
+WizardStyle=modern
 
 [Languages]
 Name: "german"; MessagesFile: "compiler:Languages\German.isl"
@@ -52,7 +59,7 @@ Source: "..\bin\Release\Newtonsoft.Json.dll"; DestDir: "{app}"
 Source: "..\bin\Release\DienstplanRSZF.exe.config"; DestDir: "{app}"
 
 [Icons]
-Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{group}\{#MyAppName}"; Filename: "{app}\DienstplanRSZF.exe"; IconFilename: "{app}\DienstplanRSZF.exe"; IconIndex: 0
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
