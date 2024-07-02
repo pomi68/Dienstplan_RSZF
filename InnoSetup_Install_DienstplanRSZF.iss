@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "5.0.0"
+#define MyAppVersion "5.0.1"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -42,6 +42,7 @@ WizardImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources
 WizardSmallImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
 WizardImageAlphaFormat=False
 WizardStyle=modern
+RestartApplications=False
 
 [Languages]
 Name: "german"; MessagesFile: "compiler:Languages\German.isl"
@@ -61,9 +62,6 @@ Source: "..\bin\Release\DienstplanRSZF.exe.config"; DestDir: "{app}"
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\DienstplanRSZF.exe"; IconFilename: "{app}\DienstplanRSZF.exe"; IconIndex: 0
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
-
-[Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Dirs]
 Name: "{userdocs}\RSZF\Setup"; Flags: uninsalwaysuninstall; Permissions: everyone-full
