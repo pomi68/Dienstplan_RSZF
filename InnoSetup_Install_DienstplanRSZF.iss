@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "5.0.1"
+#define MyAppVersion "5.0.2"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -37,9 +37,9 @@ VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 
 ;Include Download Needed Dot Net Framework
-#include <D:\Program Files (x86)\Inno Download Plugin\idp.iss>
-WizardImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
-WizardSmallImageFile=D:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
+#include <C:\Program Files (x86)\Inno Download Plugin\idp.iss>
+WizardImageFile=C:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
+WizardSmallImageFile=C:\download\VisualStudio\DienstplanRSZF\DienstplanRSZF\Resources\RSZF1_55x58_256.bmp
 WizardImageAlphaFormat=False
 WizardStyle=modern
 RestartApplications=False
