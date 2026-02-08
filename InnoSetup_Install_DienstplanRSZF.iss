@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "5.1.2"
+#define MyAppVersion "5.2.0"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -62,10 +62,6 @@ Source: "..\bin\Release\DienstplanRSZF.exe.config"; DestDir: "{app}"
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\DienstplanRSZF.exe"; IconFilename: "{app}\DienstplanRSZF.exe"; IconIndex: 0
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
-
-[Dirs]
-Name: "{userdocs}\RSZF\Setup"; Flags: uninsalwaysuninstall; Permissions: everyone-full
-Name: "{userdocs}\RSZF\ExcelAusgabe"; Flags: uninsalwaysuninstall; Permissions: everyone-full
 
 [InstallDelete]
 Type: filesandordirs; Name: "Setup"
