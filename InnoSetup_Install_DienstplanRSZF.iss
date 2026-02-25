@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "5.3.0"
+#define MyAppVersion "5.3.1"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
@@ -27,7 +27,8 @@ OutputDir=..\publish
 OutputBaseFilename=DienstplanRSZF_Install
 Compression=lzma
 SolidCompression=yes
-PrivilegesRequired=none
+PrivilegesRequired=admin
+;PrivilegesRequired=none
 RestartIfNeededByRun=False
 CloseApplications=yes
 VersionInfoVersion={#MyAppVersion}
@@ -75,6 +76,9 @@ DotNetFrameworkFailed1602=.NET Framework installation was cancelled. This instal
 DotNetFrameworkFailed1603=A fatal error occurred while installing the .NET Framework. Please fix the error, then run the installer again.
 DotNetFrameworkFailed5100=Your computer does not meet the requirements of the .NET Framework. Please consult the documentation.
 DotNetFrameworkFailedOther=The .NET Framework installer exited with an unexpected status code "%1". Please review any other messages shown by the installer to determine whether the installation completed successfully, and abort this installation and fix the problem if it did not.
+
+[Run]
+Filename: "{app}\DienstplanRSZF.exe"; Description: "Programm jetzt starten"; Flags: postinstall
 
 [Code]
 
