@@ -3,7 +3,7 @@
 
 
 #define MyAppName "Dienstplan RSZF"
-#define MyAppVersion "5.3.2"
+#define MyAppVersion "5.3.3"
 #define MyAppPublisher "mwb"
 #define MyAppExeName "DienstplanRSZF.exe"
 
